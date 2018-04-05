@@ -33,6 +33,8 @@ A set of instructions
   - add the value to SUM
 - return SUM
 
+---
+
 ### Declarative Programming
 
 A definition of the result
