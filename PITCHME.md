@@ -43,11 +43,33 @@ A definition of the result
 
 ---
 
+### Javascript
+
 ```Javascript
   const myArray = [1, 2, 3, 4];
-  let sum = myArray.reduce((accumulator, currentValue) => {
+  let func = (accumulator, currentValue) => {
     return accumulator + currentValue;
-  });
+  };
+  let sum = myArray.reduce(func);
 ```
 
 > The ```reduce()``` method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
+---
+
+### C++
+
+```C++
+  #include <vector>
+  #include <algorithm>
+
+  int main()
+  {
+  	std::vector<int> myArray = {1, 2, 3, 4};
+  	auto func = [&](int accumulator, int currentValue)
+  	{
+  		return accumulator + currentValue;
+  	};
+  	int sum = accumulate(myArray.begin(), myArray.end(), 0, func);
+  }
+```
