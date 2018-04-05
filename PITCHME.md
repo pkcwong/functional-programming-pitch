@@ -1,0 +1,40 @@
+# Functional Programming
+
+C++ and Javascript
+
+---
+
+## Functional Programming
+
+- more emphasis on the *evaluation of expressions*
+- a fixed set of things, but constantly adding more *operation* on things
+
+---
+
+## Functional Programming
+
+Building blocks are functions, not objects.
+
+- discourage procedures and commands to complete a task
+- only need to define the needed result
+
+---
+
+## Example
+
+To compute the sum of an integer list.
+
+### Imperative Programming
+
+A set of instructions
+
+- a global variable SUM = 0
+- iterate the list
+  - add the value to SUM
+- return SUM
+
+### Declarative Programming
+
+A definition of the result
+
+- define the sum as the value of the first element plus the remaining integers in the list
