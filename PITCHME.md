@@ -40,3 +40,14 @@ A set of instructions
 A definition of the result
 
 - define the sum as the value of the first element plus the remaining integers in the list
+
+---
+
+```Javascript
+  const myArray = [1, 2, 3, 4];
+  let sum = myArray.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  });
+```
+
+> The ```reduce()``` method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
