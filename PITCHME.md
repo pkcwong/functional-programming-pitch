@@ -43,6 +43,31 @@ A definition of the result
 
 ---
 
+### Recursion
+
+```C++
+  #include <vector>
+
+  int func(std::vector<int>::iterator begin, std::vector<int>::iterator end, double sum)
+  {
+    if (begin != end)
+    {
+      sum += *begin;
+      return func(++begin, end, sum);
+    }
+    return sum;
+  }
+
+  int main()
+  {
+    std::vector<int> myArray = {1, 2, 3, 4};
+    int sum = func(myArray.begin(), myArray.end(), 0);
+  }
+
+```
+
+---
+
 ### Javascript
 
 ```Javascript
@@ -124,7 +149,7 @@ To declare functions inside another function.
 
 ---
 
-## Function as Building Block
+## Higher Order Function
 
 To return a function as result.
 
@@ -145,3 +170,5 @@ To return a function as result.
       return baz();
   })();
 > ```
+
+---
