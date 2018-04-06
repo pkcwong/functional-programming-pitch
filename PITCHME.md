@@ -97,15 +97,42 @@ A definition of the result
 
 ---
 
-## Nested Functions
+## Declarative Programming
 
-The ability to declare functions inside another function
+To just declare a function and invoke it.
 
 ```Javascript
-  (() => {
-    function baz() {
-      alert("hello world")
-    }
-    return baz();
+  (function baz() {
+    alert("hello world")
   })();
+```
+
+---
+
+## Nested Functions
+
+To declare functions inside another function.
+
+```Javascript
+  (function() {
+      function baz() {
+        alert("hello world")
+      }
+      return baz();
+  })();
+```
+
+---
+
+## Function as Building Block
+
+To return a function as result.
+
+```Javascript
+  (function() {
+      function baz() {
+        alert("hello world")
+      }
+      return baz;
+  })()();
 ```
