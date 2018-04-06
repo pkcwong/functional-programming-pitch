@@ -66,10 +66,17 @@ A definition of the result
   int main()
   {
   	std::vector<int> myArray = {1, 2, 3, 4};
-  	auto func = [&](int accumulator, int currentValue)
+  	auto func = [](int accumulator, int currentValue)
   	{
   		return accumulator + currentValue;
   	};
   	int sum = accumulate(myArray.begin(), myArray.end(), 0, func);
   }
 ```
+
+## Requirements of Functional Programming
+
+- ability to create *pure functions*
+- passing a *function* as parameter
+- returning a *function* as result
+- supports *nested* functions
