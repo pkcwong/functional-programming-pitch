@@ -137,7 +137,6 @@ To return a function as result.
   })()();
 ```
 
-> ...from previous slide
 > ```Javascript
   (function() {
       function baz() {
