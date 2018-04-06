@@ -74,6 +74,8 @@ A definition of the result
   }
 ```
 
+---
+
 ## Requirements of Functional Programming
 
 - ability to create *pure functions*
