@@ -193,12 +193,29 @@ To return a function as result.
 ```
 
 ```C++
+  #include <functional>
+
   int main()
   {
-    auto myFunc = []()
+    std::function<void()> myFunc = []()
     {
       std::cout << "Hello World";
     };
     myFunc();
   }
+```
+
+---
+
+## auto Keyword
+
+```C++
+int main()
+{
+  auto myFunc = []()
+  {
+    std::cout << "Hello World";
+  };
+  myFunc();
+}
 ```
