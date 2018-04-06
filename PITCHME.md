@@ -136,3 +136,13 @@ To return a function as result.
       return baz;
   })()();
 ```
+
+> ...from previous slide
+> ```Javascript
+  (function() {
+      function baz() {
+        alert("hello world")
+      }
+      return baz();
+  })();
+> ```
