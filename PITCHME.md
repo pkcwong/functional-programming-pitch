@@ -207,7 +207,12 @@ To return a function as result.
 
 ---
 
-## auto Keyword
+### auto Keyword
+
+```
+  //Syntax
+  [ captures ] ( params ) { body }
+```
 
 ```C++
 int main()
@@ -218,4 +223,26 @@ int main()
   };
   myFunc();
 }
+```
+
+---
+
+### capture
+
+```
+  [ captures ] ( params ) { body }
+```
+
+capture default | behavior
+--- | ---
+& | capture by reference
+= | capture by copy
+
+```C++
+  int main()
+  {
+    int x = 123;
+    [&](){x;}; // by reference
+    [=](){x;}; // by copy
+  }
 ```
