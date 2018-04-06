@@ -68,6 +68,18 @@ A definition of the result
 
 ---
 
+### Object Oriented Programming
+
+> polymorphism on *objects*
+
+---
+
+### Functional Programming
+
+> polymorphism on *behavior*
+
+---
+
 ### Javascript
 
 ```Javascript
