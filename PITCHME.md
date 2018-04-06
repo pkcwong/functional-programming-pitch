@@ -81,4 +81,31 @@ A definition of the result
 - ability to create *pure functions*
 - passing a *function* as parameter
 - returning a *function* as result
-- supports *nested* functions
+- support *nested* functions
+
+---
+
+## Pure Functions
+
+- return value only determined by its inputs
+- no *side effects*
+
+> side effects include
+> - asking for inputs
+> - network requests
+> - writing to hard disks
+
+---
+
+## Nested Functions
+
+The ability to declare functions inside another function
+
+```Javascript
+  (() => {
+    function baz() {
+      alert("hello world")
+    }
+    return baz();
+  })();
+```
