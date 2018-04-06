@@ -184,3 +184,21 @@ To return a function as result.
 > ```
 
 ---
+
+## C++11
+
+```
+  //Syntax
+  [ captures ] ( params ) { body }
+```
+
+```C++
+  int main()
+  {
+    auto myFunc = []()
+    {
+      std::cout << "Hello World";
+    };
+    myFunc();
+  }
+```
