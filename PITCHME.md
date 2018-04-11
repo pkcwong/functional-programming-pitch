@@ -48,7 +48,7 @@ A definition of the result
 ```C++
   #include <vector>
 
-  int func(std::vector<int>::iterator begin, std::vector<int>::iterator end, double sum)
+  int func(std::vector<int>::iterator begin, std::vector<int>::iterator end, int sum)
   {
     if (begin != end)
     {
@@ -227,7 +227,7 @@ int main()
 
 ---
 
-### capture
+### Capture
 
 ```
   [ captures ] ( params ) { body }
@@ -246,3 +246,30 @@ capture default | behavior
     [=](){x;}; // by copy
   }
 ```
+
+### Javascript ES6
+
+```Javascript
+  let foo = function() {
+    alert('hello world');
+  };
+```
+
+### Lambda Expressions
+
+```Javascript
+  let foo = () => {
+    alert('hello world');
+  };
+```
+
+### Advantages
+
+Why do we use Functional Programming?
+
+- concise coding
+  - no more iterator variables
+  - no more states
+- huge step to "bug-less" programming
+  - no side effects
+  - same inputs results in same outputs, always
