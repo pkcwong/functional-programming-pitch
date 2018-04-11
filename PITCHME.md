@@ -257,8 +257,6 @@ capture default | behavior
   };
 ```
 
----
-
 ### Lambda Expressions
 
 ```Javascript
