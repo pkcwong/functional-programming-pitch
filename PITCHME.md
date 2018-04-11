@@ -247,6 +247,8 @@ capture default | behavior
   }
 ```
 
+---
+
 ### Javascript ES6
 
 ```Javascript
@@ -255,6 +257,8 @@ capture default | behavior
   };
 ```
 
+---
+
 ### Lambda Expressions
 
 ```Javascript
@@ -262,6 +266,8 @@ capture default | behavior
     alert('hello world');
   };
 ```
+
+---
 
 ### Advantages
 
