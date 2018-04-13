@@ -133,6 +133,23 @@ A definition of the result
 
 ---
 
+### C++
+
+```C++
+  #include <vector>
+  #include <algorithm>
+
+  int main()
+  {
+      std::vector<bool> myArray = {false, false, true, true};
+      bool sum = accumulate(myArray.begin(), myArray.end(), true, [](bool accumulator, bool currentValue){
+          return accumulator ^ currentValue;
+      });
+  }
+```
+
+---
+
 ## Requirements of Functional Programming
 
 - stateless
