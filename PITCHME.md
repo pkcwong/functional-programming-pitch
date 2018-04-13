@@ -111,6 +111,24 @@ A definition of the result
   }
 ```
 
+### C++
+
+```C++
+  #include <vector>
+  #include <algorithm>
+
+  int main()
+  {
+  	std::vector<bool> myArray = {false, false, true, true};
+  	auto func = [](bool accumulator, bool currentValue)
+  	{
+  		return accumulator ^ currentValue;
+  	};
+  	bool result = accumulate(myArray.begin(), myArray.end(), true, func);
+    // result is true
+  }
+```
+
 ---
 
 ## Requirements of Functional Programming
