@@ -328,4 +328,4 @@ Why do we use Functional Programming?
 
 > C++ and Javascript
 
-> Getting the best from both worlds
+> Getting the best of both worlds
