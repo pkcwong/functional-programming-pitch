@@ -115,6 +115,7 @@ A definition of the result
 
 ## Requirements of Functional Programming
 
+- stateless
 - ability to create *pure functions*
 - passing a *function* as parameter
 - returning a *function* as result
@@ -277,3 +278,17 @@ Why do we use Functional Programming?
 - huge step to "bug-less" programming
   - no side effects
   - same inputs results in same outputs, always
+- order of execution is not important
+  - threading
+
+---
+
+### When to Functional Programming
+
+- math
+- algorithms
+- anything without side effects
+
+> C++ and Javascript
+
+> Getting the best from both worlds
